@@ -10,28 +10,42 @@ Dependencies:
 
 ### Connecting to the EMS API
 
-The optional proxy setting can be passed to the EMS connection object with the following format:
+A username and password is always required to connect to the API:
+```python
+import emspy
+connection = emspy.Connection("username", "password")
+```
+
+Bu default, the API endpoint ***https://fas.efoqa.com/api*** will be used, but an optional argument can be used to set a different one:
+```python
+import emspy
+connection = emspy.Connection("username", "password", uri_root="https://myapiendpoint/api" )
+```
+
+An optional client-side proxy setting can also be passed to the EMS connection object. This will allow you to access the API through networks which require a proxy server to reach the internet:
 ```python
 proxies = {
     'http': 'http://{prxy_usrname}:{prxy_password}@{proxy_server_address}:{port}',
     'https': 'https://{prxy_usrname}:{prxy_password}@{proxy_server_address}:{port}'
 }
+
+import emspy
+connection = emspy.Connection("username","password", proxies=proxies)
 ```
 
+In rare cases, the API endpoint might not have a valid SSL certificate (typically for testing purposes). An optional boolean may be specified to bypass SSL validation:
 ```python
-from emspy import Connection
-
-c = Connection("efoqa_username", "efoqa_password", proxies = proxies)
-
+import emspy
+connection = emspy.Connection("username", "password", uri_root="https://myapiendpoint/api", ignoreSslErrors=True)
 ```
 
 ### Flight Querying
 #### Create a query
 ```python
-from emspy.query import FltQuery
-
-query = FltQuery(c, ems_name = 'ems9')
+query = emspy.query.FltQuery(connection, ems_name = 'ems9')
 ```
+
+The ems_name argument indicates which backing EMS system to query. The EMS API can connect to multiple EMS instances, so most API requests require a system to be specified. Internally, emspy uses this name to determine the integer system id.
 
 #### EMS Database Setup
 
