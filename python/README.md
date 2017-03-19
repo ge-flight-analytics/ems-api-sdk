@@ -16,7 +16,7 @@ import emspy
 connection = emspy.Connection("username", "password")
 ```
 
-Bu default, the API endpoint ***https://fas.efoqa.com/api*** will be used, but an optional argument can be used to set a different one:
+By default, the API endpoint ***https://fas.efoqa.com/api*** will be used, but an optional argument can be used to set a different one:
 ```python
 import emspy
 connection = emspy.Connection("username", "password", uri_root="https://myapiendpoint/api" )
