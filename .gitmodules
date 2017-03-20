@@ -4,3 +4,6 @@
 [submodule "Rems"]
 	path = Rems
 	url = https://github.com/ge-flight-analytics/Rems.git
+[submodule "emspy"]
+	path = emspy
+	url = https://github.com/ge-flight-analytics/emspy.git
