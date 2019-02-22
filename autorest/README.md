@@ -21,8 +21,10 @@ Autorest consumes a swagger.json file to generate typing files. For the EMS API,
 ### python
 
 To use python wrappers, the msrest package must be installed:
+
 ```bash
 pip3 install msrest
+pip3 install msrestazure
 ```
 
 #### python file generation
