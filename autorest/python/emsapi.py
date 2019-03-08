@@ -1,1 +1,1 @@
-from swagger.emsap_iv2 import emsapi
+from emsapi.emsapi import emsapi
