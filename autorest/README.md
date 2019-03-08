@@ -44,3 +44,7 @@ autorest --input-file=ems-api.json --python --output-folder=autorest/python --ad
 To work around this for the time being, I added a single space between the backslash and the letter manually. Hopefully the autorest guys will come up with a good fix for this and that will not be necessary every time the wrappers are generated.
 
 #### Using the client files
+
+set up .condarc with proxy
+install cert in conda
+https://www.yammer.com/ge.com/#/Threads/show?threadId=1183823411&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=%2Bproxy%20%2Bjupyter
