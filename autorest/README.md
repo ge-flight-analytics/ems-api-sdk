@@ -35,4 +35,10 @@ See https://github.com/Azure/autorest.python for more information.
 autorest --input-file=swagger.json --python --output-folder=python --add-credentials
 ```
 
+**NOTE**: The output of using autorest on the EMS API does not handle comments with \N or \U in them. Both of these occur in the output file analytic_operations.py. This seems to be a defect in the autorest generation. I filed an issue here:
+<https://github.com/Azure/autorest.python/issues/84>
+
+
+To work around this for the time being, I added a single space between the backslash and the letter manually. Hopefully the autorest guys will come up with a good fix for this and that will not be necessary every time the wrappers are generated.
+
 #### Using the client files
