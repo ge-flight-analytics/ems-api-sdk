@@ -29,10 +29,12 @@ pip3 install msrestazure
 
 #### python file generation
 
-See https://github.com/Azure/autorest.python for more information.
+See <https://github.com/Azure/autorest.python> for more information.
+
+`Run from the root of ems-api-sdk`
 
 ```bash
-autorest --input-file=swagger.json --python --output-folder=python --add-credentials
+autorest --input-file=ems-api.json --python --output-folder=autorest/python --add-credentials --override-client-name=emsapi
 ```
 
 **NOTE**: The output of using autorest on the EMS API does not handle comments with \N or \U in them. Both of these occur in the output file analytic_operations.py. This seems to be a defect in the autorest generation. I filed an issue here:
