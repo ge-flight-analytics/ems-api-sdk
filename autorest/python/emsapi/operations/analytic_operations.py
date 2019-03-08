@@ -629,9 +629,9 @@ class AnalyticOperations(object):
         </ul>
         The list of other properties
         returned are specific to each analytic but may include:
-        <ul><li>Basic\Comments</li><li>Basic\Description</li><li>Information\Comments</li><li>Information\Description</li><li>Information\UID</li><li>Parameter\Abbreviation</li><li>Parameter\Constant</li><li>Parameter\ID</li><li>Parameter\Name</li><li>Value\Is
+        <ul><li>Basic\Comments</li><li>Basic\Description</li><li>Information\Comments</li><li>Information\Description</li><li>Information\ UID</li><li>Parameter\Abbreviation</li><li>Parameter\Constant</li><li>Parameter\ID</li><li>Parameter\ Name</li><li>Value\Is
         Discrete</li><li>Value\Operational Rate Max</li><li>Value\Physical
-        Range Min</li><li>Value\Units</li><li>Value\Wraps</li></ul>.
+        Range Min</li><li>Value\ Units</li><li>Value\Wraps</li></ul>.
 
         :param ems_system_id: The unique identifier of the system containing
          the EMS data.
