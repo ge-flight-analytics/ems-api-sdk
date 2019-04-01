@@ -6,3 +6,4 @@ A collection of different programming language tools and documents to help you g
 1. [R Documentation](https://github.com/ge-flight-analytics/Rems)
 1. [TypeScript Documentation](/typescript/README.md)
 1. [Swagger Specification](ems-api.json)
+1. [Strongly typed APIs](/autorest/README.md)
