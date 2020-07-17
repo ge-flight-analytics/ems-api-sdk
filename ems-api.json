@@ -5,7 +5,7 @@
         "title": "EMS API v2",
         "description": "The second version of the REST-based API for accessing EMS data"
     },
-    "host": "emsapitest:443",
+    "host": "ems.efoqa.com:443",
     "basePath": "/api",
     "schemes": [
         "https"
