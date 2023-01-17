@@ -1,6 +1,6 @@
 # Typings for the EMS API
 
-Strongly-typed bindings are useful when programming against an API because they help to avoid unintentional errors by forcing the existance of a property as well as making the model more discoverable. This readme will detail how to generate typings for use with the EMS API.
+Strongly-typed bindings are useful when programming against an API because they help to avoid unintentional errors by forcing the existence of a property as well as making the model more discoverable. This readme will detail how to generate typings for use with the EMS API.
 
 ## Generate strongly typed files
 
